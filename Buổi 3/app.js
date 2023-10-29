@@ -1,13 +1,15 @@
 // Variable
-let n = 60;
-// Function
-function checkDivideto2(x) {
-    return (x % 2 == 0);
-}
+let arr = [
+    "Javascript",
+    "C++",
+    "Java",
+    "Python",
+    "C#",
+    "PHP",
+    "Ruby",
+    "NodeJS"
+]
 // Main script
-for (let i = 1; i <= n; i++) {
-    if( checkDivideto2(i) )
-    {
-        console.log(i);
-    }
+for (let i = 0; i < arr.length; i++) {
+    console.log(`Vị trí thứ ${i + 1} là phần tử: ${arr[i]}`);
 }
