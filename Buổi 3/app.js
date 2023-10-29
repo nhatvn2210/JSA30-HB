@@ -9,7 +9,13 @@ let arr = [
     "Ruby",
     "NodeJS"
 ]
+let Info = {
+     name: "Phan Minh Nhật",
+     age: 13,
+     email: "coiminhnhat2210@gmail.com",
+}
 // Main script
-for (let i = 0; i < arr.length; i++) {
-    console.log(`Vị trí thứ ${i + 1} là phần tử: ${arr[i]}`);
+for (let thuoc_tinh of arr)
+{
+    console.log(`This value is ${thuoc_tinh} `);
 }
