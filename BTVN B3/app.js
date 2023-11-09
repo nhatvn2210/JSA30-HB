@@ -36,7 +36,6 @@ for (let i = 0; i < productList.length; i++) {
     if(productList[i].price > 500)
     {
         console.log(productList[i].name);
-        document.write(productList[i].name + ", ")
     }
 }
   
