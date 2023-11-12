@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.banner{
+    background-image: url(https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823_1280.jpg);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+}
+.dark-layer{
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    opacity: 0.5;
+    z-index: -1;
+}
+.container{
+    text-align: center;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    padding: 50px;
+    width: max-content;
+    margin: auto;
+    background-color: white;
+    z-index: 99;
+    border-radius: 10px;
+}
+.add-button{
+    width: 50px;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px black solid;
+}
+.input{
+    height: 30px;
+    border-radius: 10px;
+    border: 1px black solid;
+}

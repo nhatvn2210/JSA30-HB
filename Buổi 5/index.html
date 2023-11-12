@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
 <body>
+    <div class="banner"></div>
+    <div class="dark-layer"></div>
     <div class="container">
-        <h1>To do List</h1>
+        <h1 id="main-title">To do List</h1>
         <form action="">
-            <input type="text" id="input">
-            <button id="add-button">Add</button>
+            <input type="text" id="input" class="input">
+            <button id="add-button" class="add-button">Add</button>
         </form>
-        <ul id="result-list">
+        <ul id="result-list" class="result-list">
             
         </ul>
     </div>
+    <script src="./app.js"></script>
 </body>
 </html>
