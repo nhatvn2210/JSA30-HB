@@ -1,0 +1,44 @@
+/* System style */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Special classes */
+.flex-container{
+    display: flex;
+}
+/* Overall  */
+.container{
+    width: 1200px;
+    margin: 100px auto;
+    font-family: Roboto Slab, serif;
+}
+/* Blog */
+.blog-container{
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.blog-title{
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* Comment Form*/
+.comment-container{
+    margin-top: 50px;
+    width: 100%;
+}
+.comment-container form .comment-input{
+    height: 100px;
+    border-radius: 10px;
+    border: solid black 0.2px;
+    flex: 95%;
+}
+.comment-container form .add-button{
+    font-family: Roboto Slab, serif;
+    flex: 5%;
+}
+/* Comment List */
+.comment-display-list{
+    list-style: decimal;
+}
