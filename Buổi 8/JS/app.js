@@ -74,7 +74,10 @@ function renderProductList(selectedList) {
         htmls += ` 
         <div class = "product-item">
             <img src = ${selectedList[i].image}>
-            <h3>${selectedList[i].name}</h3>
+            <div class = "product-text">
+              <h3>${selectedList[i].name}</h3>
+              <p class = "price">${selectedList[i].price}</p>
+            </div>
         </div>
         `;
     }
