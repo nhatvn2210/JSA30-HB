@@ -7,6 +7,9 @@ const passwordInput = document.querySelector("#password");
 const repeatPasswordInput = document.querySelector("#repeat-password");
 const signUpForm = document.querySelector("#sign-up-form");
 
+// Datalist
+let accountList = JSON.parse(localStorage.getItem("account-list")) || [];
+
 // Function
 
 // Sign up function
@@ -26,8 +29,16 @@ function handleSignUp(event){
         password,
         repeatPassword,
     };
-    // Print information
-    console.log(accountData);
+    // Check: Are the inputs full-filling
+    if(!fullName || !email || !dateOfBirth || !password || !repeatPassword)
+    {
+        alert("Điền hết tất cả các trường!");
+        return ;
+    }
+    // Add to account list
+    accountList.push(accountData);
+    // Store in local storage
+    localStorage.setItem("account-list", JSON.stringify(accountList));
 }
 
 // Main script
@@ -35,4 +46,5 @@ function handleSignUp(event){
 signUpForm.addEventListener("submit", function(event){
     // Call the sign up form
     handleSignUp(event);
+
 })
