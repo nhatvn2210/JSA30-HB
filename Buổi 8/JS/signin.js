@@ -21,6 +21,7 @@ function handleSignin(event) {
         let currentAccount = accountList[i];
         if (email == currentAccount.email && password == currentAccount.password) {
             alert("Successfully sign in!");
+            window.location.pathname = "";
             return;
         }
         alert("Email or password is not correct.");
@@ -32,3 +33,4 @@ function handleSignin(event) {
 signInForm.addEventListener("submit", function (event) {
     handleSignin(event);
 })
+
